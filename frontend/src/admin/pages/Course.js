@@ -91,9 +91,9 @@ const Course = () => {
                             loading ? <div className="text-center">Loading...</div> : courses.map((course) => (
                                 <button 
                                 onClick={() => handleCourseClick(course._id)}
-                                key={course._id} className="p-3 shadow-md rounded-xl space-y-3">
+                                key={course._id} className="p-3 shadow-sm rounded-xl bg-gray-50 border border-gray-300 space-y-3">
                                     <div className="font-semibold text-sm text-blue-800">{course.name}</div>
-                                    <div className="font-bold text-3xl">15/{course.seats}</div>
+                                    <div className="font-semibold text-3xl">15/{course.seats}</div>
                                 </button>
                             ))
                         }
@@ -142,7 +142,7 @@ const Course = () => {
                 </Modal> 
                 </> 
         }
-            current={'Course'}
+            current={'Courses'}
             search={false}
         />        
     )

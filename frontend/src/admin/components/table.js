@@ -1,7 +1,7 @@
 // Table.js
 import React from 'react';
 
-export default function Table({ data, columns, actionButton }) {
+export default function Table({ data, columns, actionButton, H1, text }) {
   const renderTableHeaders = () => {
     return columns.map((column) => (
       <th
@@ -38,9 +38,9 @@ export default function Table({ data, columns, actionButton }) {
     <div className="px-4 sm:px-6 lg:px-8">
       <div className="sm:flex sm:items-center">
         <div className="sm:flex-auto">
-          <h1 className="text-base font-semibold leading-6 text-gray-900">Users</h1>
+          <h1 className="text-base font-semibold leading-6 text-gray-900">{H1}</h1>
           <p className="mt-2 text-sm text-gray-700">
-            A list of all the users in your account including their name, title, email and role.
+            {text}
           </p>
         </div>
         <div className="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">

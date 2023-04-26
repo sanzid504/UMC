@@ -21,7 +21,7 @@ const Pending = () => {
       ];
     
       const actionButton = {
-        label: 'Add user',
+        label: 'Approve All',
         onClick: async () => {
           // Implement the onClick logic here, e.g., open a modal to add a new user
           console.log('Add user button clicked');
@@ -31,7 +31,7 @@ const Pending = () => {
         <Template
             content={
                 <>
-                 <Table data={data} columns={columns} actionButton={actionButton} />
+                 <Table data={data} columns={columns} actionButton={actionButton} H1={'Pending Users'} text={'All of the pending users with their trasaction ID please varify them to continue the course.'} />
                 </>
             }
             current={'Pending'}

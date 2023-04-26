@@ -31,10 +31,10 @@ const Student = () => {
         <Template
             content={
                 <>
-                 <Table data={data} columns={columns} actionButton={actionButton} />
+                 <Table data={data} columns={columns} actionButton={actionButton} H1={'Students'} text={'students from various courses all together you can search through them or filter them according to which courses they are in.'} />
                 </>
             }
-            current={'Student'}
+            current={'Students'}
             search={false}
         />        
     )

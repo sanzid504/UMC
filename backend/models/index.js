@@ -3,7 +3,7 @@ const sequelize = require("../config/database");
 const Payment = require('./payment');
 const User = require('./users');
 const Course = require('./course');
-
+const CourseUser = require('./courseUser');
 // Set up the relationships between the models
 // ...
 
@@ -11,6 +11,7 @@ async function sync() {
     try{
         await Payment.sync({alter:true});
         await User.sync({alter:true});
+        await CourseUser.sync({alter:true});
         await Course.sync({alter:true});
         console.log(`Database synced`);
     }catch(e){
@@ -23,5 +24,6 @@ module.exports = {
     sequelize,
     Payment,
     User,
-    Course
+    Course,
+    CourseUser,
 };
